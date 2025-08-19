@@ -204,4 +204,30 @@ return {
       },
     },
   },
+
+  -- fuzzy finder
+  {
+    "ibhagwan/fzf-lua",
+    cmd = "FzfLua",
+    keys = {
+      { "<leader>sb", "<cmd>FzfLua buffers<cr>", desc = "Fuzzy find buffers" },
+      { "<leader>sf", "<cmd>FzfLua files<cr>", desc = "Fuzzy find files" },
+      { "<leader>sg", "<cmd>FzfLua grep<cr>", desc = "Grep search" },
+      { "<leader>ss", "<cmd>FzfLua lsp_document_symbols<cr>", desc = "Fuzzy find symbols (document)" },
+      { "<leader>sS", "<cmd>FzfLua lsp_workspace_symbols<cr>", desc = "Fuzzy find symbols (workspace)" },
+    },
+    opts = {
+      winopts = {
+        preview = { hidden = true },
+      },
+      keymaps = {
+        builtin = {},
+        fzf = {
+          ["alt-p"] = "toggle-preview",
+          ["shift-up"] = "preview-up",
+          ["shift-down"] = "preview-down",
+        },
+      },
+    },
+  },
 }
