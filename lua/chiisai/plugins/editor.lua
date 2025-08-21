@@ -212,7 +212,7 @@ return {
     keys = {
       { "<leader>sb", "<cmd>FzfLua buffers<cr>", desc = "Fuzzy find buffers" },
       { "<leader>sf", "<cmd>FzfLua files<cr>", desc = "Fuzzy find files" },
-      { "<leader>sg", "<cmd>FzfLua grep<cr>", desc = "Grep search" },
+      { "<leader>sg", "<cmd>FzfLua live_grep<cr>", desc = "Live grep search" },
       { "<leader>ss", "<cmd>FzfLua lsp_document_symbols<cr>", desc = "Fuzzy find symbols (document)" },
       { "<leader>sS", "<cmd>FzfLua lsp_workspace_symbols<cr>", desc = "Fuzzy find symbols (workspace)" },
     },
