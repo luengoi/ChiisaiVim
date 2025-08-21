@@ -7,7 +7,7 @@ return {
     opts = {
       flavour = "mocha",
       integrations = {
-        blink_cmp = { style = "bordered" },
+        blink_cmp = true,
         snacks = { enabled = true },
         mason = true,
         mini = { enabled = true },
